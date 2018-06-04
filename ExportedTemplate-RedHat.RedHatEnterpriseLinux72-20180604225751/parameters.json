@@ -1,0 +1,78 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualMachineName": {
+            "value": "WJPRHEL72"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_D2_v3"
+        },
+        "adminUsername": {
+            "value": "will"
+        },
+        "virtualNetworkName": {
+            "value": "TestRG1-vnet"
+        },
+        "networkInterfaceName": {
+            "value": "wjprhel72854"
+        },
+        "networkSecurityGroupName": {
+            "value": "WJPRHEL72-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "testrg1diag352"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/testrg1diag352"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "subnetName": {
+            "value": "default"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "publicIpAddressName": {
+            "value": "WJPRHEL72-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "19:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "UTC"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": null
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "msiExtensionName": {
+            "value": "ManagedIdentityExtensionForLinux"
+        }
+    }
+}
