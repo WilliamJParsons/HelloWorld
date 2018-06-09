@@ -1,0 +1,45 @@
+Connect-AzureRmAccount
+
+Get-AzureRmResourceGroup | Select-Object ResourceGroupName,Location
+
+Get-AzureRmResource |
+    Select-Object ResourceGroupName,Location,ResourceType,Name
+
+Get-Command -Module AzureRM.Compute
+	
+	
+Start-AzureRmVM -ResourceGroupName TestRG1  -Name WJPRHEL72
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
