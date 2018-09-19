@@ -16,3 +16,10 @@ package { 'azure-cli' :
   }
   
 
+
+package { 'WALinuxAgent' :
+  ensure => installed
+  }
+service { 'waagent' :
+  ensure => running
+  }
