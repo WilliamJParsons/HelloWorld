@@ -1,0 +1,1 @@
+puppet module install puppetfinland-windows_snmp --version 0.3.1

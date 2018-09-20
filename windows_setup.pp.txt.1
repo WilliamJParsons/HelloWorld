@@ -1,0 +1,20 @@
+scheduled_task { 'Purge global temp files every 2 hours':
+   ensure  => present,
+   enabled => true,
+   command   => 'c:\\windows\\system32\\cmd.exe',
+   arguments => '/c "del c:\\windows\\temp\\*.* /F /S /Q"',
+   trigger => [{
+      day_of_week => ['mon', 'tues', 'wed', 'thurs', 'fri'],
+      every => '1',
+      minutes_interval => '120',
+      minutes_duration => '1440',
+      schedule => 'weekly',
+      start_time => '07:30'
+   }],
+  user => 'system',
+}
+
+file { 'c:\\Temp\\foo.txt':
+  ensure   => present,
+  content  => 'This is some text in my file'
+}
