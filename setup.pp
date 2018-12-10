@@ -1,3 +1,4 @@
+# Various bits of setup
 package { 'git' :
   ensure => installed
   }
@@ -14,5 +15,3 @@ package { 'azure-cli' :
   ensure => installed,
   require => Yumrepo['azure-cli'],
   }
-  
-
